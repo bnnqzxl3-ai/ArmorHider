@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "armorhider",
+  "version": "${version}",
+  "name": "Armor Hider",
+  "description": "Скрывает броню визуально, чтобы был виден скин. Только у тебя на экране.",
+  "authors": ["cursedTraxaL"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.armorhider.ArmorHiderClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "armorhider.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
